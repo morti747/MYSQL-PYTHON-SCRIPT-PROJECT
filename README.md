@@ -7,7 +7,7 @@
 
 ## :zap: This is the schema of our Database :zap:
 
-## ![image](images/1.png)
+## ![image](images/1.1.png)
 
 ##
 ## :zap: And this is our database location on our topology :zap:
@@ -137,7 +137,11 @@ finally:
 
 ##
 
+##
 
+![image](images/7.1.PNG)
+
+##
 
 ##
 
@@ -148,14 +152,37 @@ finally:
 
 ##
 
+![image](images/8.1.PNG)
+
+##
+
+##
+
 ![image](images/8.PNG)
 
 ##
 
+##
 
+![image](images/9.PNG)
 
+##
 
+##
 
+![image](images/10.PNG)
 
+##
 
+##
+
+![image](images/11.PNG)
+
+##
+
+##
+
+![image](images/12.PNG)
+
+##
 
