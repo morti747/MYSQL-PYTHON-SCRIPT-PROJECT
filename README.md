@@ -173,6 +173,18 @@ finally:
 ![image](images/10.PNG)
 
 ##
+
+##
+
+![image](images/11.PNG)
+
+##
+
+##
+
+![image](images/12.PNG)
+
+##
 ```python
 import mysql.connector as mysql
 from mysql.connector import Error
@@ -229,14 +241,6 @@ for record in records:
 
 ```
 ##
-
-![image](images/11.PNG)
-
-##
-
-##
-
-![image](images/12.PNG)
 
 ##
 
