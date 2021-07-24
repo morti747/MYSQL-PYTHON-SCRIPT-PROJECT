@@ -76,7 +76,7 @@ try:
 
 
     command_handler.execute("CREATE TABLE IF NOT EXISTS Departements (Departement INT AUTO_INCREMENT PRIMARY KEY, \
-        Failed VARCHAR(30) NOT NULL, Responsible VARCHAR(20), Employe INT, FOREIGN KEY (Employe) REFERENCES Employes(Employe))")
+        Field VARCHAR(30) NOT NULL, Telephone VARCHAR(20), Responsible VARCHAR(20), Employe INT, FOREIGN KEY (Employe) REFERENCES Employes(Employe))")
     print ("Table Departements has been created successfully ") 
 
 
