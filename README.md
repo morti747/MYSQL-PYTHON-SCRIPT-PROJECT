@@ -31,7 +31,7 @@
 
 ##
 
-
+##
 ``
 import mysql.connector as mysql
 from mysql.connector import Error
@@ -127,6 +127,7 @@ finally:
         print("MySQL connection is closed")
 ``
 
+##
 
 
 
