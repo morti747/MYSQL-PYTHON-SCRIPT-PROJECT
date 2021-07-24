@@ -32,7 +32,7 @@
 ##
 
 
-``python 
+``
 import mysql.connector as mysql
 from mysql.connector import Error
 
