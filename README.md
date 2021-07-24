@@ -36,7 +36,7 @@
 import mysql.connector as mysql
 from mysql.connector import Error
 
-host = "192.168.11.161"
+host = "10.10.10.1"
 user = 'morty'
 password = "Morteza123@$"
 
