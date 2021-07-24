@@ -248,3 +248,66 @@ for record in records:
 ![image](images/13.1.PNG)
 
 ##
+##
+```python
+import mysql.connector as mysql
+from mysql.connector import Error
+
+host = "10.10.10.1"
+user = 'morty'
+password = "Morteza123@$"
+
+
+try:
+    db1 = mysql.connect(host=host, user=user, password=password, database="MORTYMAINTENANCE")
+    print("Connected to MORTYMAINTENANCE database")
+
+except Exception as e:
+    print("Could not connect to MORTYMAINTENACE ")
+    print(e)
+
+try:
+    command_handler = db1.cursor()
+    query = """INSERT INTO Employes(Name,Family_name,Email_Address,Telephone,Address,Departement) \
+    VALUES (%s, %s, %s, %s, %s, %s)"""
+    query_vals = [( 'Richard', 'Anderson', 'richard.anderson.com', 51425983, '48 Garden Ave', "Materiel"), \
+    ( 'Ema', 'Limeira', 'ema.limeira.com', 51424979, '68 Fifeshire Ave', "Materiel"), \
+    ( 'Michael', 'Holze', 'michael.holz.com', 51424922, '226 Newton Dr', "Materiel"), \
+    ( 'Maurizio', 'Moroni', 'maurizio.moroni.com', 51424221, '23 Blackforest Ave', "Materiel"), \
+    ( 'Isabel', 'Sandra', 'isabel.sandra.com', 51424295, '170 Princess Ave', "logiciel"), \
+    ( 'Jean', 'Fresnier', 'jean.fresnier.com', 51424353, '87 Goremley Rd', "logiciel"), \
+    ( 'Francois', 'Rovelli', 'francois.rovelli.com', 51424773, '121 Shudell Ave', "logiciel"), \
+    ( 'Howard', 'Synder', 'howard.synder.com', 51424723, '189 Churchill Ave', "logiciel")
+
+    ]
+
+
+    command_handler.executemany(query,query_vals)
+    db1.commit()
+    print(command_handler.rowcount, "record inserted in Employes table")
+
+
+
+
+except Exception as e:
+    print("Table could not be created ")
+    print(e)
+
+
+
+command_handler.execute("SELECT * FROM Employes")
+records = command_handler.fetchall()
+print("Displaying records")
+for record in records:
+    print(record)
+
+```
+##
+
+
+
+##
+
+![image](images/14.PNG)
+
+##
