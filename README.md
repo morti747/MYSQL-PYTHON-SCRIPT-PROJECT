@@ -32,7 +32,7 @@
 ##
 
 ##
-``
+```
 import mysql.connector as mysql
 from mysql.connector import Error
 
@@ -125,7 +125,7 @@ finally:
         command_handler.close()
         db.close()
         print("MySQL connection is closed")
-``
+```
 
 ##
 
