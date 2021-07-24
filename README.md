@@ -173,7 +173,61 @@ finally:
 ![image](images/10.PNG)
 
 ##
+```python
+import mysql.connector as mysql
+from mysql.connector import Error
 
+host = "10.10.10.1"
+user = 'morty'
+password = "Morteza123@$"
+
+
+try:
+    db1 = mysql.connect(host=host, user=user, password=password, database="MORTYMAINTENANCE")
+    print("Connected to MORTYMAINTENANCE database")
+
+except Exception as e:
+    print("Could not connect to MORTYMAINTENACE ")
+    print(e)
+
+try:
+    command_handler = db1.cursor()
+    query = """INSERT INTO Clients(Name,Family_name,Email_Address,Telephone,Address,Company) \
+    VALUES (%s, %s, %s, %s, %s, %s)"""
+    query_vals = [( 'Kala', 'Wiliam', 'kala.wiliam.com', 64725625, '24-Tudor-St', 'Rogers'), \
+    ('Franc', 'Wilson', 'franc.wilson.com', 64725256, '1287 Finch St', 'Lonesomme restaurant'), \
+    ('John', 'Steel', 'john.steel.com', 64725178, '158 Cedar crs', "La maison d'asie"), \
+    ( 'Philip', 'Cramer', 'philip.cramer.com', 64725622, '15 Poplar St', "La maison d'asie"), \
+    ( 'Lucia', 'Carvalho', 'lucia.carvalho.com', 64725278, '12 Roxton Ave', "Rancho Grande"), \
+    ( 'Jose', 'Pavarotti', 'jose.pavarotti.com', 51425224, '74 Barker Ave', "Simson bistro"), \
+    ( 'Pascale', 'Cartrain', 'pascal.cartrain.com', 51425298, '38 Seaton Dr', "Cracker Box"), \
+    ( 'Paul', 'Henriot', 'paul.henriot.com', 51425723, '124 Bogert Ave', "Wartian Herku"), \
+    ( 'Karl', 'Saveley', 'karl.saveley.com', 51425759, '149 Melrose Ave', "Wolski"), \
+    ( 'Rita', 'Mulller', 'rita.muller.com', 51425762, '186 Bayberry Crs', "Reggiani")
+
+    ]
+
+
+    command_handler.executemany(query,query_vals)
+    db1.commit()
+    print(command_handler.rowcount, "record inserted in Clients table")
+
+
+
+
+except Exception as e:
+    print("Table could not be created ")
+    print(e)
+
+
+
+command_handler.execute("SELECT * FROM Clients")
+records = command_handler.fetchall()
+print("Displaying records")
+for record in records:
+    print(record)
+
+```
 ##
 
 ![image](images/11.PNG)
