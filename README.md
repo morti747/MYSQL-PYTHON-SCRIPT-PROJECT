@@ -97,7 +97,8 @@ try:
 
 
 
-    command_handler.execute("CREATE TABLE IF NOT EXISTS Orders (Order_id INT AUTO_INCREMENT, Instrument_Name VARCHAR(20), Vender VARCHAR(30), MAC VARCHAR(50), Recepetion VARCHAR(50), Delivery VARCHAR(30), Description VARCHAR (100), Client INT, Service INT, Employe INT, \
+    command_handler.execute("CREATE TABLE IF NOT EXISTS Orders (Order_id INT AUTO_INCREMENT, Instrument_Name VARCHAR(20), \
+    Vender VARCHAR(30), MAC VARCHAR(50), Recepetion VARCHAR(50), Delivery VARCHAR(30), Description VARCHAR (100), Client INT, Service INT, Employe INT, \
         PRIMARY KEY (Order_id, Client, Service, Employe), \
         FOREIGN KEY (Service) REFERENCES Services(Service), \
         FOREIGN KEY (Employe) REFERENCES Employes(Employe), \
