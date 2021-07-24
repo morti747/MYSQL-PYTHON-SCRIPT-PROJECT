@@ -7,4 +7,4 @@
 
 ## :zap: This is the schema of our project :zap:
 
-## ![image](image/7.PNG)
+## ![image](image/1.PNG)
