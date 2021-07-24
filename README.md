@@ -249,6 +249,12 @@ for record in records:
 
 ##
 ##
+
+![image](images/16.PNG)
+
+##
+
+##
 ```python
 import mysql.connector as mysql
 from mysql.connector import Error
@@ -309,5 +315,11 @@ for record in records:
 ##
 
 ![image](images/14.PNG)
+
+##
+
+##
+
+![image](images/15.PNG)
 
 ##
