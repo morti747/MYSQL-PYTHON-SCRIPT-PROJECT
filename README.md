@@ -18,7 +18,7 @@
 
 ##
 
-:zap: We art going to use the windows 10 computer to manage our database on Ubuntu server using python script :zap:
+:zap: We are going to use the windows 10 computer to manage our database on Ubuntu server using python script :zap:
 
 
 
