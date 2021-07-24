@@ -18,8 +18,17 @@
 
 ##
 
-:zap: We are going to use the windows 10 computer to manage our database on Ubuntu server using python script :zap:
+:zap: We are going to use the windows 10 computer to manage our database on Ubuntu server located on the different networks using python script :zap:
 
+##
 
+![image](images/4.PNG)
+
+##
+##
+
+![image](images/5.PNG)
+
+##
 
 
