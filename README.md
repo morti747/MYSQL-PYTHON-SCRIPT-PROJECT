@@ -323,3 +323,57 @@ for record in records:
 ![image](images/15.PNG)
 
 ##
+
+```python
+
+
+import mysql.connector as mysql
+from mysql.connector import Error
+
+host = "192.168.11.161"
+user = 'morty'
+password = "Morteza123@$"
+
+
+try:
+    db1 = mysql.connect(host=host, user=user, password=password, database="MORTYMAINTENANCE")
+    print("Connected to MORTYMAINTENANCE database")
+
+except Exception as e:
+    print("Could not connect to MORTYMAINTENACE ")
+    print(e)
+
+
+
+
+
+try:
+    command_handler = db1.cursor()
+    query = """INSERT INTO Departements(Field,Telephone,Responsible,Employe) \
+    VALUES (%s, %s, %s, %s)"""
+    query_vals = [( 'Logiciel', 51425983, 'Francois', '7'), \
+    ( 'MaterieL', 51425984, 'Ema', '2')
+    ]
+
+
+    command_handler.executemany(query,query_vals)
+    db1.commit()
+    print(command_handler.rowcount, "record inserted in Departements table")
+
+
+
+
+except Exception as e:
+    print("Table could not be created ")
+    print(e)
+
+
+
+command_handler.execute("SELECT * FROM Departements")
+records = command_handler.fetchall()
+print("Displaying records")
+for record in records:
+    print(record)
+
+
+```
