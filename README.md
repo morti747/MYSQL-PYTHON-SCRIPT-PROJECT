@@ -324,6 +324,10 @@ for record in records:
 
 ##
 
+# Let's start inserting the data
+
+##
+
 ```python
 
 
