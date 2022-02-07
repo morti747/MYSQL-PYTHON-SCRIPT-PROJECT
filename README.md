@@ -33,7 +33,7 @@ networks (10.10.10.0/24 and 10.10.30.0/24) using python script :zap:
 ##
 
 Python needs a MySQL driver to access the MySQL database, in this project we'll use the driver "MySQL Connector".\
-To handle connection errors, use the Error onject and catch all errors.\
+To handle connection errors, use the Error onject and catch all errors using the errors.Error exception:\
 the Cursor object is used to execute statements to communicate with the MySQL database.\
 you can create Cursor object using the cursor() method of the connection object/class. 
 
