@@ -2,7 +2,7 @@
 
 # :zap: Mortimaintenance is a company who repares network supplies:zap:
 
-:star: In this project we are going to create the database of this company with tables and insrte the data into each table, and do some queries.
+:star: In this project we are going to create the database of this company as it's shown, with several tables and make the relation between them, insrte data into each table, and do some queries.
 
 
 ## :zap: This is the schema of our Database :zap:
@@ -10,7 +10,7 @@
 ## ![image](images/1.1.PNG)
 
 ##
-## :zap: And this is our database location on our topology :zap:
+## :zap: And this is the topology of out network and the location of our database server :zap:
 
 ##
 
@@ -18,7 +18,7 @@
 
 ##
 
-:zap: We are going to use the windows 10 computer to manage our database on Ubuntu server located on the different networks using python script :zap:
+:zap: We'll use the windows 10 computer to manage our database created on Ubuntu server located in different networks using python script :zap:
 
 ##
 
