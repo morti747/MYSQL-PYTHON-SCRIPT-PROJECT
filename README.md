@@ -1,6 +1,6 @@
 # MYSQL-PYTHON-SCRIPT-PROJECT
 
-# :zap: Mortimaintenance is a company who repares network supplies:zap:
+# :zap: Mortymaintenance is a company who repares network supplies:zap:
 
 :star: In this project we are going to create the database of this company as it's shown, with several tables and make the relation between them, insrte data into each table, and do some queries.
 
