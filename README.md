@@ -18,7 +18,8 @@
 
 ##
 
-:zap: We'll use the windows 10 computer to manage our database created on Ubuntu server located in different networks using python script :zap:
+:zap: We'll use the windows 10 computer to manage our database created on Ubuntu server located in different\
+networks (10.10.10.0/24 and 10.10.20.0/24) using python script :zap:
 
 ##
 
