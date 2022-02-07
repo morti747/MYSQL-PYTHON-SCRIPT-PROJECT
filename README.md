@@ -32,7 +32,7 @@
 ##
 
 
-the Cursor object is used to execute statements to communicate with the MySQL database. 
+the Cursor object is used to execute statements to communicate with the MySQL database.\
 you can create Cursor object using the cursor() method of the connection object/class. 
 
 
